@@ -1,0 +1,154 @@
+// lear
+// Intro Component
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+// Colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+$white: hsl(0, 0, 100%);
+$shadow: hsla(249, 10%, 26%, 0.2);
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: url(images/bg-intro-desktop.png) $red;
+  background-size: cover;
+}
+
+// Main Content
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 10%;
+  gap: 2.5rem;
+
+  .left-content {
+    flex-basis: 100%;
+
+    .title {
+      color: $white;
+      font-size: 3rem;
+      line-height: 3.25rem;
+    }
+
+    .text {
+      color: $white;
+      padding-top: 1.75rem;
+    }
+  }
+
+  .right-content {
+    flex-basis: 100%;
+
+    .top-text {
+      background-color: $blue;
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      text-align: center;
+      color: $white;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      box-shadow: 0 6px $shadow;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2.5rem;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      background-color: $white;
+      box-shadow: 0 6px $shadow;
+
+      input {
+        width: 100%;
+        padding: 1rem 2rem;
+        border: 1px solid $shadow;
+        border-radius: 0.25rem;
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        -ms-border-radius: 0.25rem;
+        -o-border-radius: 0.25rem;
+        outline: none;
+      }
+
+      .btn {
+        padding: 1.25rem;
+        border-radius: 0.25rem;
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        -ms-border-radius: 0.25rem;
+        -o-border-radius: 0.25rem;
+        background-color: $green;
+        box-shadow: 0 -3px $shadow inset;
+        border: none;
+        color: $white;
+        font-size: 0.975rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+
+      .text {
+        font-size: 0.85rem;
+        color: $grayishBlue;
+        text-align: center;
+
+        span {
+          color: $red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// For Smaller Devices
+@media screen and (max-width: 968px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 5%;
+
+    .left-content .title {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+
+    .right-content .form {
+      padding: 2rem;
+
+      .btn {
+        font-size: 0.925rem;
+      }
+    }
+  }
+}

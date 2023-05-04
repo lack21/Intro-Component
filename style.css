@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: url(images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 10%;
+  gap: 2.5rem;
+}
+.main .left-content {
+  flex-basis: 100%;
+}
+.main .left-content .title {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  line-height: 3.25rem;
+}
+.main .left-content .text {
+  color: hsl(0, 0%, 100%);
+  padding-top: 1.75rem;
+}
+.main .right-content {
+  flex-basis: 100%;
+}
+.main .right-content .top-text {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px hsla(249, 10%, 26%, 0.2);
+}
+.main .right-content .top-text span {
+  font-weight: 400;
+}
+.main .right-content .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 6px hsla(249, 10%, 26%, 0.2);
+}
+.main .right-content .form input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 1px solid hsla(249, 10%, 26%, 0.2);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  outline: none;
+}
+.main .right-content .form .btn {
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 -3px hsla(249, 10%, 26%, 0.2) inset;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.975rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main .right-content .form .btn:hover {
+  opacity: 0.75;
+}
+.main .right-content .form .text {
+  font-size: 0.85rem;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+}
+.main .right-content .form .text span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 968px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 5%;
+  }
+  .main .left-content .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .main .right-content .form {
+    padding: 2rem;
+  }
+  .main .right-content .form .btn {
+    font-size: 0.925rem;
+  }
+}/*# sourceMappingURL=style.css.map */
